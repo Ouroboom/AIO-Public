@@ -244,7 +244,7 @@ internal class TalentsManager : ICycleable
                 break;
 
             // SUB ROGUE
-            case "RogueSublety":
+            case "RogueSubtlety":
                 Codes = new string[]
                 {
                     "00000000000000000000000000000000000000000000000000000005020232010322120150135031251",

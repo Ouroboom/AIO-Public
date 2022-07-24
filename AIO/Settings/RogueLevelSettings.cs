@@ -40,8 +40,8 @@ namespace AIO.Settings
         [DefaultValue(2)]
         [Category("Fighting")]
         [DisplayName("Blade Flurry")]
-        [Description("Enemycount for using BladeFlurry?")]
-        public int BladeFLurry { get; set; }
+        [Description("Enemycount for using Blade Flurry?")]
+        public int BladeFlurry { get; set; }
 
         [Setting]
         [DefaultValue(2)]
@@ -60,24 +60,24 @@ namespace AIO.Settings
         [Setting]
         [DefaultValue(3)]
         [Category("Fighting")]
-        [DisplayName("Eviscarate")]
-        [Description("Combopoints for using Eviscarate?")]
-        public int Eviscarate { get; set; }
+        [DisplayName("Eviscerate")]
+        [Description("Combopoints for using Eviscerate?")]
+        public int Eviscerate { get; set; }
 
-        [DropdownList(new string[] { "RogueCombat", "RogueAssassination", "RogueSubletly" })]
+        [DropdownList(new string[] { "RogueCombat", "RogueAssassination", "RogueSubtlety" })]
         public override string ChooseTalent { get; set; }
 
-        [DropdownList(new string[] { "Auto", "Combat", "Assassination", "Sublety" })]
+        [DropdownList(new string[] { "Auto", "Combat", "Assassination", "Subtlety" })]
         public override string ChooseRotation { get; set; }
 
         public RogueLevelSettings()
         {
             ChooseTalent = "RogueCombat";
             Evasion = 2;
-            BladeFLurry = 2;
+            BladeFlurry = 2;
             KillingSpree = 2;
             AdrenalineRush = 3;
-            Eviscarate = 3;
+            Eviscerate = 3;
             ChooseTalent = "RogueCombat";
             Stealth = false;
             Distract = false;
